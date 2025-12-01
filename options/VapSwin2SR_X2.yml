@@ -1,4 +1,4 @@
-# Training config
+# Training config (X2)
 train:
   batch_size: 2
   epochs: 50
