@@ -1,0 +1,27 @@
+
+  # Nama file bobot yang akan dimuat oleh test.py dan inference.py
+  checkpoint_weight_name: "vapswin2sr_checkpoint_weight.pth" 
+  checkpoint_optim_name: "vapswin2sr_checkpoint_optim.pth"
+  final_model_name: "vapswin2sr_final.pth"
+
+# Konfigurasi Model (Arsitektur)
+model:
+  upscale: 4
+  img_size: 128
+  in_chans: 3
+  window_size: 8
+  embed_dim: 90
+  vab_d_atten: 90
+  num_feat: 90
+  img_range: 1.0
+  depths: [6, 6, 6, 6]
+  num_heads: [6, 6, 6, 6]
+  resi_connection: '3conv'
+  mlp_ratio: 2
+  upsampler: 'pixelshuffle'
+
+# Path Dataset (WAJIB DISESUAIKAN)
+paths:
+  # Path yang digunakan oleh test.py
+  test_lr: "Dataset\\dataset sr\\X4\\test_LR" 
+  test_hr: "Dataset\\dataset sr\\X4\\test"
