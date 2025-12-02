@@ -9,3 +9,9 @@ Abdul Aziz Ar Rasyid (azrsyd.id@gmail.com)
   <a href="https://github.com/azrsyd/VapSwin2SR/blob/6f73ea58cf9d9921dffb155a745ae51cbd460b08/Framework.jpg"><img src="Framework.jpg" alt="vapswin2sr" width="800" border="0"></a>
 </p>
 <!-- ![framework.jpg](./framework.jpg) -->
+
+Performance comparison of several state of the art scale (PSNR / SSIM on Y channel):
+| <sub> model </sub> | <sub> Pararms[K] </sub> | <sub> Set5 </sub> | <sub> Set14 </sub> |  <sub> B100 </sub> | <sub> Urban100 </sub> |
+|  :----:  | :----:  |  :----:  | :----:  |  :----:  | :----:  |
+|  VapSR-S  | 155 | 32.14/0.8951 | 28.64/0.7826 | 27.60/0.7373 | 26.05/0.7852 |
+|  VapSR  | 342 | 32.38/0.8978 | 28.77/0.7852 | 27.68/0.7398 | 26.35/0.7941 |
