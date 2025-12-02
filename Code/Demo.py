@@ -8,7 +8,7 @@ from ultralytics import YOLO
 from model import VapSwin2SR 
 
 # --- Config ---
-def load_config(config_path="demo_config.yaml"):
+def load_config(config_path="demo_config.yml"):
     """Memuat konfigurasi dari file YAML."""
     if not os.path.exists(config_path):
         raise FileNotFoundError(f"Konfigurasi file tidak ditemukan: {config_path}")
