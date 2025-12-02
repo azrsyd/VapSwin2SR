@@ -1,0 +1,39 @@
+# ==============================================================================
+# demo_config.yaml
+# File Konfigurasi untuk Program Demo
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# KONFIGURASI PATH (WAJIB DISESUAIKAN)
+# ------------------------------------------------------------------------------
+paths:
+  # Folder yang berisi gambar-gambar untuk didemonstrasikan
+  image_folder: "Dataset SkyFusion\\Vehicules256"
+
+  # Path bobot model Super-Resolution (VapSwin2SR)
+  sr_model_weights:
+    2: "vapswin2sr [6 6 6 6] (dot before dorp path fixed) x2 90feat head 3 3 3 3.pth"
+    4: "vapswin2sr [6 6 6 6] (dot before dorp path fixed) x4 90feat head 3 3 3 3.pth"
+
+  # Path bobot model Deteksi Objek (YOLO)
+  yolo_model_weights:
+    2: "weight yolo 256.pt"
+    4: "weight yolo 512.pt"
+    default: "weight yolo_512.pt"
+
+# ------------------------------------------------------------------------------
+# KONFIGURASI MODEL SR (HARUS SAMA DENGAN SAAT TRAINING)
+# ------------------------------------------------------------------------------
+sr_model_config:
+  img_size: 128
+  in_chans: 3
+  window_size: 8
+  embed_dim: 90
+  vab_d_atten: 90
+  num_feat: 90
+  img_range: 1.0
+  depths: [6, 6, 6, 6]
+  num_heads: [3, 3, 3, 3]
+  resi_connection: '3conv'
+  mlp_ratio: 2
+  upsampler: 'pixelshuffle'
