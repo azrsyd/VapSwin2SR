@@ -13,7 +13,7 @@ from model import VapSwin2SR
 #---------------------------------------------------------------------------------------------------
 # Utility Functions
 #---------------------------------------------------------------------------------------------------
-def load_config(config_path="config.yaml"):
+def load_config(config_path="config.yml"):
     """Memuat konfigurasi dari file YAML."""
     with open(config_path, "r") as f:
         config = yaml.safe_load(f)
