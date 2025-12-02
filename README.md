@@ -21,6 +21,7 @@ The following shows the qualitative comparisons of VapSwinSR over the state-of-t
 </p>
 
 ## Demos
-The demo program is available in the [Demo.py](Code/Demo.py) file. This file performs super-resolution and vehicle detection tasks in interactive mode. You can also use only the detection process without SR. To ensure that the code runs properly, make sure that all libraries are installed, including ultralytics, BasicSR, and timm. I recommend placing model.py in the same folder and ensuring that all paths to the data and model weights are correct on your computer.
+The demo program is available in the [Demo.py](Code/Demo.py) file. This file performs super-resolution and vehicle detection tasks in interactive mode. You can also use only the detection process without SR. To ensure that the code runs properly, make sure that all libraries are installed, including ultralytics, BasicSR, and timm. I recommend placing [model.py](Code/model.py) in the same folder and ensuring that all paths to the data and model weights are correct on your computer.
+
 
 
