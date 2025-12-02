@@ -13,7 +13,7 @@ from train import SRDataset  # import the Dataset class from train.py
 #---------------------------------------------------------------------------------------------------
 # Utility Functions
 #---------------------------------------------------------------------------------------------------
-def load_config(config_path="config.yaml"):
+def load_config(config_path="config.yml"):
     with open(config_path, "r") as f:
         config = yaml.safe_load(f)
     return config
